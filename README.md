@@ -7,9 +7,18 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run:
+
+```sh
+git clone https://github.com/tusharvijay24/SwiftlyLoader.git
+cd SwiftlyLoader/Example
+pod install
+open SwiftlyLoader.xcworkspace
+```
 
 ## Requirements
+- iOS 11.0+
+- Swift 5.0+
 
 ## Installation
 
@@ -18,6 +27,40 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'SwiftlyLoader'
+```
+
+Then run:
+```sh
+pod install
+```
+
+## Usage
+
+### Import SwiftlyLoader
+```swift
+import SwiftlyLoader
+```
+
+### Show Loader
+```swift
+SwiftLoader.shared.show()
+```
+
+### Hide Loader
+```swift
+SwiftLoader.shared.hide()
+```
+
+### Custom Configuration
+```swift
+let customConfig = SwiftLoaderConfig(
+    backgroundColor: .white,
+    indicatorColor: .magenta,
+    indicatorSize: 50,
+    cornerRadius: 15,
+    activityIndicatorStyle: .medium
+)
+SwiftLoader.shared.show(config: customConfig)
 ```
 
 ## Author

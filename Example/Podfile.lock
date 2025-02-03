@@ -1,0 +1,16 @@
+PODS:
+  - SwiftlyLoader (0.1.0)
+
+DEPENDENCIES:
+  - SwiftlyLoader (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftlyLoader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftlyLoader: 9f3f73886ed5a75b96b530ce03ed2a7aaf500fb7
+
+PODFILE CHECKSUM: 3a9fb633517cf1c43a1381e0096e4e9d1417d235
+
+COCOAPODS: 1.16.2
