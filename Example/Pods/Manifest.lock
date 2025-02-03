@@ -1,0 +1,16 @@
+PODS:
+  - SwiftLoader (0.1.0)
+
+DEPENDENCIES:
+  - SwiftLoader (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftLoader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftLoader: 761cfe2bd40be061d33c3ffedffdf85a10e6af3b
+
+PODFILE CHECKSUM: 3ca6caf9452ed456cbf1f34300d24a7dc8e7cb8c
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,6 @@
+framework module Pods_SwiftLoader_Example {
+  umbrella header "Pods-SwiftLoader_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
