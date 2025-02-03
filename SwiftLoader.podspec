@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "SwiftLoader"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "A simple customizable loading indicator for iOS."
   spec.description  = "SwiftLoader is a lightweight and customizable loading indicator for iOS applications."
   spec.homepage     = "https://github.com/tusharvijay24/SwiftLoader.git"
