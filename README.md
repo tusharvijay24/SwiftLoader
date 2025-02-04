@@ -14,7 +14,7 @@ SwiftlyLoader is a lightweight, **customizable loading indicator** for iOS appli
 ---
 
 ## 📌 **Requirements**
-- iOS 13.0+
+- iOS 15.0+
 - Swift 5.0+
 
 ---
