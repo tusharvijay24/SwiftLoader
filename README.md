@@ -53,13 +53,10 @@ SwiftLoader.shared.hide()
 
 ### Custom Configuration
 ```swift
-let customConfig = SwiftLoaderConfig(
-    backgroundColor: .white,
-    indicatorColor: .magenta,
-    indicatorSize: 50,
-    cornerRadius: 15,
-    activityIndicatorStyle: .medium
-)
+let config = SwiftlyLoaderConfig(
+            indicatorColor: .red, indicatorSize: 80.0, loaderType: .lottie(animation: .infinityLine),
+            containerSize: 100.0
+        )
 SwiftLoader.shared.show(config: customConfig)
 ```
 
