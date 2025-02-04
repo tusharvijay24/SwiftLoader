@@ -5,25 +5,24 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftlyLoader.svg?style=flat)](https://cocoapods.org/pods/SwiftlyLoader)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftlyLoader.svg?style=flat)](https://cocoapods.org/pods/SwiftlyLoader)
 
-## Example
+## 🚀 **Overview**
+SwiftlyLoader is a lightweight, **customizable loading indicator** for iOS applications. It supports:
+- **System Activity Indicator** (UIActivityIndicatorView)
+- **Lottie Animations** for a modern and fluid experience.
+- **Full customization** of background, size, animation speed, and colors.
 
-To run the example project, clone the repo, and run:
+---
 
-```sh
-git clone https://github.com/tusharvijay24/SwiftlyLoader.git
-cd SwiftlyLoader/Example
-pod install
-open SwiftlyLoader.xcworkspace
-```
-
-## Requirements
+## 📌 **Requirements**
 - iOS 13.0+
 - Swift 5.0+
 
-## Installation
+---
 
-SwiftlyLoader is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+## 📥 **Installation**
+
+### **Using CocoaPods**
+SwiftlyLoader is available through **CocoaPods**. To install, add the following line to your `Podfile`:
 
 ```ruby
 pod 'SwiftlyLoader', :git => 'https://github.com/tusharvijay24/SwiftlyLoader.git'
@@ -34,36 +33,77 @@ Then run:
 pod install
 ```
 
-## Usage
+---
 
-### Import SwiftlyLoader
+## 🛠 **Usage**
+### **1️⃣ Import SwiftlyLoader**
 ```swift
 import SwiftlyLoader
 ```
 
-### Show Loader
+### **2️⃣ Show Loader (Default)**
 ```swift
-SwiftLoader.shared.show()
+SwiftlyLoader.shared.show()
 ```
 
-### Hide Loader
+### **3️⃣ Hide Loader**
 ```swift
-SwiftLoader.shared.hide()
+SwiftlyLoader.shared.hide()
 ```
 
-### Custom Configuration
+---
+
+## 🎨 **Customization**
+SwiftlyLoader supports **custom configuration** to style the loader.
+
+### **Using System Activity Indicator**
 ```swift
 let config = SwiftlyLoaderConfig(
-            indicatorColor: .red, indicatorSize: 80.0, loaderType: .lottie(animation: .infinityLine),
-            containerSize: 100.0
-        )
-SwiftLoader.shared.show(config: customConfig)
+    backgroundColor: .black.withAlphaComponent(0.6),
+    indicatorColor: .white,
+    indicatorSize: 80.0,
+    cornerRadius: 10.0,
+    loaderType: .systemIndicator(style: .large) // ✅ System Activity Indicator
+)
+
+SwiftlyLoader.shared.show(config: config)
 ```
 
-## Author
+### **Using Lottie Animation**
+```swift
+let config = SwiftlyLoaderConfig(
+    backgroundColor: .black.withAlphaComponent(0.6),
+    indicatorColor: .red,
+    indicatorSize: 80.0,
+    cornerRadius: 10.0,
+    loaderType: .lottie(animation: .waveLoader), // ✅ Lottie Animation
+    animationSpeed: 1.5
+)
 
-tusharvijay24, tusharvijayvargiya24112000@gmail.com
+SwiftlyLoader.shared.show(config: config)
+```
 
-## License
+---
 
-SwiftlyLoader is available under the MIT license. See the LICENSE file for more info.
+## 🏗 **Example Project**
+To run the **example project**, clone the repo and run:
+
+```sh
+git clone https://github.com/tusharvijay24/SwiftlyLoader.git
+cd SwiftlyLoader/Example
+pod install
+open SwiftlyLoader.xcworkspace
+```
+
+---
+
+## 👨‍💻 **Author**
+Developed by **Tushar Vijayvargiya**  
+📧 [tusharvijayvargiya24112000@gmail.com](mailto:tusharvijayvargiya24112000@gmail.com)  
+📍 [GitHub](https://github.com/tusharvijay24)  
+
+---
+
+## 📄 **License**
+SwiftlyLoader is available under the **MIT license**. See the [LICENSE](LICENSE) file for more info.
+```
