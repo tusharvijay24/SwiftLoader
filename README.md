@@ -76,7 +76,7 @@ let config = SwiftlyLoaderConfig(
     indicatorColor: .red,
     indicatorSize: 80.0,
     cornerRadius: 10.0,
-    loaderType: .lottie(animation: .waveLoader), // ✅ Lottie Animation
+    loaderType: .lottie(animation: .waveDots), // ✅ Lottie Animation
     animationSpeed: 1.5
 )
 
